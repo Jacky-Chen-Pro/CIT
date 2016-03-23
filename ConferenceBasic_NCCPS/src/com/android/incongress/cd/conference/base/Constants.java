@@ -92,24 +92,6 @@ public class Constants {
     public static final String GUIDE_XIU = "guide_xiu";
     public static final String GUIDE_SESSION = "guide_session";
 
-    /**  会议日程  发言还是主持 新增至15种类型 **/
-    public static final int HYRC_SPEAKER_FAYAN = 1;
-    public static final int HYRC_SPEAKER_ZHUCHI = 2;
-    public static final int HYRC_SPEAKER_FANYI = 3;
-    public static final int HYRC_SPEAKER_TAOLUN = 4;
-    public static final int HYRC_SPEAKER_SHUZHE = 5;
-    public static final int HYRC_SPEAKER_BAOGAO = 6;
-    public static final int HYRC_SPEAKER_SPEAK = 7;
-    public static final int HYRC_SPEAKER_JIESHUO = 8;
-    public static final int HYRC_SPEAKER_PINGLUN = 9;
-    public static final int HYRC_SPEAKER_ZHUXI = 10;
-    public static final int HYRC_SPEAKER_COZHUXI = 11;
-    public static final int HYRC_SPEAKER_JUDGE = 12;
-    public static final int HYRC_SPEAKER_BANJIANG = 13;
-    public static final int HYRC_SPEAKER_LINGJIANG = 14;
-    public static final int HYRC_SPEAKER_LEADDISCUSSANT = 15;
-    public static final int HYRC_SPEAKER_OTHER = 16;
-
     /** 会议日程中 Session(会议)和Metting(演讲)的关注 0-->不关注; 1-->关注 **/
     public static final int SMNOATTENTION = 0;
     public static final int SMATTENTION = 1;

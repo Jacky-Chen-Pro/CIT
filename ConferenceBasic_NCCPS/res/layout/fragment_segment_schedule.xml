@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="@dimen/layout_padding"
+        android:paddingBottom="@dimen/layout_padding"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:id="@+id/rl_time"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_prev"
+            android:layout_width="18dp"
+            android:src="@drawable/left_arrow"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_large"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/layout_padding"
+            android:gravity="center_vertical"
+            android:textColor="@color/theme_color"
+            android:text="3月19日"
+            android:drawableLeft="@drawable/search_day_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_last"
+            android:layout_width="18dp"
+            android:src="@drawable/right_arrow_clickable"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_certain_time"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/rl_time"
+        android:layout_height="100dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/rl_certain_time"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@color/white"
+        android:padding="3dp"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_room"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="@dimen/layout_padding"
+        android:layout_height="68dp">
+        <LinearLayout
+            android:background="@color/theme_color"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/search_reset"
+                android:id="@+id/iv_reset"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_start_search"
+                android:layout_width="0dp"
+                android:text="@string/searc_start_search"
+                android:textSize="@dimen/text_size_large"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_weight="9"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
